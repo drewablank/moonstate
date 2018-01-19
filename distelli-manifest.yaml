@@ -1,0 +1,15 @@
+drewablank/moonstate:
+  Build:
+  
+  PkgInclude:
+    - '*'
+    
+  PreInstall:
+    - echo "Starting PreInstall Steps - Installing python34 and python-pip"
+    - sudo yum -y install python34
+    - sudo yum -y install python-pip
+  
+  Exec:
+    - echo "Starting Exec Steps - Running moonstate.py"
+    - sudo python moonstate.py
+    - echo "You should now be able to view the moon's state at localhost:8080"
