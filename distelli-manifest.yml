@@ -10,6 +10,7 @@ drewablank/moonstate:
     - sudo yum -y install python36u
     - sudo yum -y install python36u-pip
     - sudo pip3.6 install requests
+    - sudo pip3.6 install http
   
   Exec:
     - echo "Starting Exec Steps - Running moonstate.py"
