@@ -1,13 +1,17 @@
 drewablank/moonstate:
+  PreBuild:
+    - curl -O https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/ius-release-1.0-15.ius.centos6.noarch.rpm
+  
   Build:
   
   PkgInclude:
     - '*'
     
   PreInstall:
-    - echo "Starting PreInstall Steps - Installing python34 and python-pip"
-    - sudo yum -y install python34
-    - sudo yum -y install python-pip
+    - sudo yum -y install ius-release-1.0-15.ius.centos6.noarch.rpm
+    - sudo yum -y install python36u
+    - sudo yum -y install python36u-pip
+    - sudo pip3.6 install requests
   
   Exec:
     - echo "Starting Exec Steps - Running moonstate.py"
