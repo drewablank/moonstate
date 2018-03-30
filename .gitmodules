@@ -1,6 +1,3 @@
 [submodule "Example-Django-App"]
 	path = Example-Django-App
 	url = https://github.com/drewablank/Example-Django-App
-[submodule "SupportKB"]
-	path = SupportKB
-	url = https://github.com/drewablank/SupportKB.git
