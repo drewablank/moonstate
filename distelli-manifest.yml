@@ -6,6 +6,8 @@ drewablank/moonstate:
     - ls -lah
     - cd Example-Django-App
     - ls -lah
+    - ls -lah ..
+    - ls -lah ../..
   
   PkgInclude:
     - '*'
