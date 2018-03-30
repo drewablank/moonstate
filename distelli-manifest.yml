@@ -1,17 +1,17 @@
 drewablank/moonstate:
   
   Build:
-    - echo ":::: Initializing the submodule dir"
+    - echo ':::: Initializing the submodule dir'
     - git submodule init
     - git submodule update
-    - echo ":::: Querying the build dir"
+    - echo ':::: Querying the build dir'
     - ls -lah
-    - echo ":::: Querying one dir up from build"
+    - echo ':::: Querying one dir up from build'
     - ls -lah ..
-    - echo ":::: Querying two dirs up from build"
+    - echo ':::: Querying two dirs up from build'
     - ls -lah ../..
     - cd Example-Django-App
-    - echo ":::: Querying the submodule dir"
+    - echo ':::: Querying the submodule dir'
     - ls -lah
   
   PkgInclude:
