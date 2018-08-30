@@ -1,3 +1,4 @@
 Creating a new branch
 Creating a new pull request
 Making a change with the PR still open
+Committing an extremely long titled commit
